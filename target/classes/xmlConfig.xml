@@ -8,8 +8,10 @@
     </bean>
 
     <bean id="plusService" class="xmlConfiguration.PlusService">
-        <constructor-arg index="0" value="-5.1"/>
-        <constructor-arg index="1" value="42.2"/>
+        <constructor-arg index="0" value="50"/>
+        <constructor-arg index="1" value="42"/>
     </bean>
+
+
 
 </beans>
