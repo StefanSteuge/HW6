@@ -2,30 +2,29 @@ package xmlConfiguration;
 
 public class PlusService {
 
-    private double a, b;
+    private int a;
+    private int b;
+    private int resultPlus;
 
-    public PlusService(double a, double b) {
+    public PlusService(int a, int b) {
         this.a = a;
         this.b = b;
     }
 
-    public double plusService(double a, double b) {
-        return a + b;
+    public PlusService(int resultPlus) {
+        this.resultPlus = resultPlus;
     }
 
-    public double getA() {
+    public int getA() {
         return a;
     }
 
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
+    public int getB() {
         return b;
     }
 
-    public void setB(double b) {
-        this.b = b;
+    public int getResultPlus() {
+        resultPlus = a + b;
+        return resultPlus;
     }
 }

@@ -3,13 +3,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
     <bean id="minusService" class="xmlConfiguration.MinusService">
-        <constructor-arg value="" />
-        <constructor-arg value="28" />
+        <constructor-arg index="0" value="5"/>
+        <constructor-arg index="1" value="25"/>
     </bean>
 
     <bean id="plusService" class="xmlConfiguration.PlusService">
-        <constructor-arg value="Oleksander" />
-        <constructor-arg value="42" />
+        <constructor-arg index="0" value="-5.1"/>
+        <constructor-arg index="1" value="42.2"/>
     </bean>
 
 </beans>
