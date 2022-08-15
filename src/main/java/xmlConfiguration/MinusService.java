@@ -1,30 +1,29 @@
 package xmlConfiguration;
 
 public class MinusService {
-    private double a, b;
+    private int a;
+    private int b;
+    private int resultMinus;
 
-    public MinusService(double a, double b) {
+    public MinusService(int resultMinus) {
+        this.resultMinus = resultMinus;
+    }
+
+    public MinusService(int a, int b) {
         this.a = a;
         this.b = b;
-    }
+            }
 
-    public double minusService(double a, double b) {
-        return a - b;
-    }
-
-    public double getA() {
+    public int getA() {
         return a;
     }
 
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
+    public int getB() {
         return b;
     }
 
-    public void setB(double b) {
-        this.b = b;
+    public int getResultMinus() {
+        resultMinus = a - b;
+        return resultMinus;
     }
 }

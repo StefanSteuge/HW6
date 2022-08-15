@@ -2,14 +2,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="employee" class="org.example.beanfactory.Employee">
-        <constructor-arg value="John" />
-        <constructor-arg value="28" />
+    <bean id="minusService" class="xmlConfiguration.MinusService">
+        <constructor-arg index="0" value="5"/>
+        <constructor-arg index="1" value="25"/>
     </bean>
 
-    <bean id="employee2" class="org.example.beanfactory.Employee">
-        <constructor-arg value="Oleksander" />
-        <constructor-arg value="42" />
+    <bean id="plusService" class="xmlConfiguration.PlusService">
+        <constructor-arg index="0" value="50"/>
+        <constructor-arg index="1" value="42"/>
     </bean>
+
+
 
 </beans>
