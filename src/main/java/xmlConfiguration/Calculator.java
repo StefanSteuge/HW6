@@ -18,11 +18,11 @@ public class Calculator {
     public MinusService getMinusService() {
         return minusService;
     }
-    public void setMinusService(MinusService minusService) {
-        this.minusService = minusService;
-    }
     public PlusService getPlusService() {
         return plusService;
+    }
+    public void setMinusService(MinusService minusService) {
+        this.minusService = minusService;
     }
     public void setPlusService(PlusService plusService) {
         this.plusService = plusService;

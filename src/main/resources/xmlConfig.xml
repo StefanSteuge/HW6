@@ -12,6 +12,9 @@
         <constructor-arg index="1" value="42"/>
     </bean>
 
-
+    <bean
+            id="Calculator"
+            class="xmlConfiguration.Calculator">
+    </bean>
 
 </beans>
